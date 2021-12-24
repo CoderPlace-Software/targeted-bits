@@ -9,13 +9,13 @@ const cleanCSS = require('gulp-clean-css');
 gulp.task('server', function () {
   browserSync.init({
     server: {
-      baseDir: "."
+      baseDir: "./src/"
     }
   });
 });
 
 gulp.task('styles', function () {
-  return gulp.src("scss/**/*.+(scss|sass)")
+  return gulp.src("/src/scss/**/*.+(scss|sass)")
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(rename({
       prefix: "",
@@ -25,7 +25,7 @@ gulp.task('styles', function () {
       cascade: false
     }))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('/src/css'))
     .pipe(browserSync.stream());
 })
 
