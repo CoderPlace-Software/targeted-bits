@@ -1,0 +1,89 @@
+.experience {
+	&__subtitle {
+		text-align: center;
+		margin-top: 164px;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			background-color: #a5b7d2;
+			border-radius: 100%;
+			transform: translate(27px, 100%);
+		}
+	}
+	&__title {
+		text-align: center;
+		margin-top: 3px;
+	}
+	&__wrapper {
+		position: relative;
+		margin-top: 92px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:before {
+			content: url("../img/girl.svg");
+			position: absolute;
+			transform: translateX(-90%);
+			bottom: 0;
+			background: url("../img/girlhand.svg") no-repeat;
+			background-position: top 20px right -10px;
+		}
+		&:after {
+			content: url("../img/boy.svg");
+			position: absolute;
+			right: -6%;
+			bottom: 0;
+			background: url("../img/boyhand.svg") no-repeat;
+			background-position: top 20px left 10px;
+		}
+	}
+	&__item {
+		width: 338px;
+		height: 311px;
+		border-radius: 10px;
+		text-align: center;
+		overflow: hidden;
+		box-shadow: 7px 5px 30px rgba(42, 67, 113, 0.1);
+		&:nth-child(1) {
+			.text-color {
+				color: #00c3ff;
+			}
+			img {
+				transform: translateX(-35px);
+			}
+		}
+		&:nth-child(2) {
+			.text-color {
+				color: #0160e7;
+			}
+			img {
+				transform: translateX(-7px);
+			}
+		}
+		&:nth-child(3) {
+			.text-color {
+				color: #fe4c1c;
+			}
+			img {
+				transform: translateX(-17px);
+			}
+		}
+	}
+	&__number {
+		font-family: $headings;
+		font-size: 36px;
+		font-weight: 700;
+		margin-top: 59px;
+	}
+	&__description {
+		font-family: $regular-text;
+		font-size: 18px;
+		font-weight: 500;
+		margin-top: 9px;
+	}
+	&__img {
+		margin-top: 37px;
+	}
+}

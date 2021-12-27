@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="391.005" height="161.997" viewBox="0 0 391.005 161.997">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c3ff" stop-opacity="0"/>
+      <stop offset="0.228" stop-color="#00c3ff" stop-opacity="0.012"/>
+      <stop offset="0.365" stop-color="#00c3ff" stop-opacity="0.043"/>
+      <stop offset="0.477" stop-color="#00c3ff" stop-opacity="0.098"/>
+      <stop offset="0.576" stop-color="#00c3ff" stop-opacity="0.176"/>
+      <stop offset="0.666" stop-color="#00c3ff" stop-opacity="0.282"/>
+      <stop offset="0.75" stop-color="#00c3ff" stop-opacity="0.408"/>
+      <stop offset="0.83" stop-color="#00c3ff" stop-opacity="0.557"/>
+      <stop offset="0.905" stop-color="#00c3ff" stop-opacity="0.733"/>
+      <stop offset="0.975" stop-color="#00c3ff" stop-opacity="0.925"/>
+      <stop offset="1" stop-color="#00c3ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-107.64 -87.087)">
+    <path id="Path_25" data-name="Path 25" d="M108.208,87.655c20.926,0,26.016,57.653,65.607,57.653s41.852-23.061,67.869-23.061,38.777,46.123,64.475,46.123,36.639-34.592,67.3-34.592,37.893,34.592,55.426,34.592,39.967-80.715,69.189-80.715V249.084H108.208Z" opacity="0.8" fill="url(#linear-gradient)"/>
+    <path id="Path_26" data-name="Path 26" d="M108.208,87.655c20.926,0,26.016,57.653,65.607,57.653s41.852-23.061,67.869-23.061,38.777,46.123,64.475,46.123,36.639-34.592,67.3-34.592,37.893,34.592,55.426,34.592,39.967-80.715,69.189-80.715" fill="none" stroke="#00c3ff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.135"/>
+  </g>
+</svg>

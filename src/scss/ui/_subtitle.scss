@@ -1,0 +1,17 @@
+.subtitle {
+	position: relative;
+	font-family: $regular-text;
+	font-size: 14px;
+	font-weight: 700;
+	color: #a5b7d2;
+	text-transform: uppercase;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		background-color: #a5b7d2;
+		border-radius: 100%;
+		transform: translate(-20px, 100%);
+	}
+}
