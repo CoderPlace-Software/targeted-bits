@@ -1,1 +1,66 @@
-// styles for button
+// Styles for buttons
+.button {
+	padding: 18px 71px 17px 39px;
+	color: #ffffff;
+	background-color: $second-color;
+	border-radius: 28px;
+	font-family: $regular-text;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	box-shadow: 10px 7px 20px rgba(254, 76, 28, 0.3);
+	position: relative;
+	&:after {
+		content: url("../icons/arrow-pointing-to-right-orange.svg");
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 46px;
+		height: 46px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+		background-color: #ffffff;
+		transition: all 0.15s ease-out;
+	}
+	&-search:hover:before {
+		content: url("../icons/search.svg");
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+		background-color: #f0f6ff;
+		transform: translate(-90%, 40%);
+		transition: all 0.15s ease-out;
+	}
+	&_active {
+		padding: 15px 50px 17px 33px;
+		font-family: $headings;
+		font-size: 18px;
+		font-weight: 600;
+		border: none;
+		box-shadow: none;
+	}
+	&_big {
+		padding: 11px 37px 12px 32px;
+		background-color: $main-color;
+		border-radius: 25px;
+		font-size: 20px;
+		box-shadow: none;
+		&:after {
+			content: none;
+			transition: all 0.15s ease-out;
+		}
+	}
+	&_blue {
+		background-color: $main-color;
+		box-shadow: 7px 5px 18px rgba(0, 195, 255, 0.3);
+		&:after {
+			content: url("../icons/arrow-pointing-to-right-blue.svg");
+		}
+	}
+}
