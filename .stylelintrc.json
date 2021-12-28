@@ -10,6 +10,8 @@
     "max-empty-lines": 1,
     "value-keyword-case": "lower",
     "at-rule-empty-line-before": null,
-    "rule-empty-line-before": null
+    "rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "string-quotes": "double"
   }
 }
