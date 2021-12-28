@@ -1,70 +1,70 @@
 .tagline {
-	padding: 13px 40px 11px 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-family: $regular-font;
-	font-size: 14px;
-	font-weight: 500;
-	a,
-	address {
-		color: #a5b7d2;
-		text-decoration: none;
-	}
-	&__left-part {
-		width: 330px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__social {
-		width: 120px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__right-part {
-		width: 585px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	address > a:before {
-		content: url("../icons/placeholder-logo.svg");
-		margin-right: 8px;
-		transition: all 0.15s ease-out;
-	}
-	.email:before {
-		content: url("../icons/mail-logo.svg");
-		margin-right: 10px;
-		transition: all 0.15s ease-out;
-	}
-	.language {
-		font-family: $regular-font;
-		font-size: 14px;
-		font-weight: 500;
-		border: none;
-		color: #a5b7d2;
-		&_option {
-			color: #a5b7d2;
-		}
-		&:focus {
-			color: #a5b7d2;
-			border: none;
-		}
-	}
-	.divider {
-		width: 1px;
-		height: 21px;
-		background-color: #000;
-		opacity: 0.1;
-	}
-	a:hover {
-		svg {
-			* {
-				fill: $second-color;
-				transition: all 0.15s ease-out;
-			}
-		}
-	}
+  padding: 13px 40px 11px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $regular-font;
+  font-size: 14px;
+  font-weight: 500;
+  a,
+  address {
+    color: #a5b7d2;
+    text-decoration: none;
+  }
+  &__left-part {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right-part {
+    width: 585px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  address > a::before {
+    content: url("../icons/placeholder-logo.svg");
+    margin-right: 8px;
+    transition: all 0.15s ease-out;
+  }
+  .email::before {
+    content: url("../icons/mail-logo.svg");
+    margin-right: 10px;
+    transition: all 0.15s ease-out;
+  }
+  .language {
+    font-family: $regular-font;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    color: #a5b7d2;
+    &_option {
+      color: #a5b7d2;
+    }
+    &:focus {
+      color: #a5b7d2;
+      border: none;
+    }
+  }
+  .divider {
+    width: 1px;
+    height: 21px;
+    background-color: #000;
+    opacity: 0.1;
+  }
+  a:hover {
+    svg {
+      * {
+        fill: $second-color;
+        transition: all 0.15s ease-out;
+      }
+    }
+  }
 }

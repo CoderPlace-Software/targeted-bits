@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "style": "stylelint src/scss/**/*.scss --fix"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,7 @@
     "bootstrap": "^5.1.3"
   },
   "lint-staged": {
-    "*.scss": "stylelint --fix",
+    "*.scss": "npm run style",
     "*.js": "eslint --cache --fix"
   }
 }
