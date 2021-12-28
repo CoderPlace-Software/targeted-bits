@@ -1,11 +1,19 @@
 // General Styles
+
 @import "fonts";
+
 @import "variables";
+
 @import "bootstrap";
+
 @import "general";
 
+@import "mixins";
+
 // UI Components
+
 @import "ui";
 
 // Page Components
+
 @import "components";
