@@ -1,18 +1,19 @@
 // Styles for buttons
 
 .button {
-  padding: 18px 71px 17px 39px;
+  // padding: 18px 71px 17px 39px;
   color: #fff;
   background-color: $second-color;
   border-radius: 28px;
-  font-family: $regular-font;
+  font-family: $headings-font;
   font-size: 16px;
   font-weight: 700;
   border: none;
-  box-shadow: 10px 7px 20px rgb(254 76 28 / 30%);
+
+  // box-shadow: 10px 7px 20px rgb(254 76 28 / 30%);
   position: relative;
 
-  &::after {
+  /* &::after {
     content: url("../icons/arrow-pointing-to-right-orange.svg");
     position: absolute;
     right: 5px;
@@ -25,10 +26,10 @@
     border-radius: 100%;
     background-color: #fff;
     transition: all 0.15s ease-out;
-  }
+  } */
 
   &_active {
-    padding: 15px 50px 17px 33px;
+    // padding: 15px 50px 17px 33px;
     font-family: $headings-font;
     font-size: 18px;
     font-weight: 600;
@@ -37,7 +38,7 @@
   }
 
   &_big {
-    padding: 11px 37px 12px 32px;
+    padding: 13px 32px;
     background-color: $main-color;
     border-radius: 25px;
     font-size: 20px;
@@ -49,12 +50,12 @@
     }
   }
 
-  &_blue {
+  /* &_blue {
     background-color: $main-color;
     box-shadow: 7px 5px 18px rgb(0 195 255 / 30%);
 
     &::after {
       content: url("../icons/arrow-pointing-to-right-blue.svg");
     }
-  }
+  } */
 }

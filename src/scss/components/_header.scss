@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "mixins";
 
 // Styles for navigation
@@ -139,6 +141,23 @@
           margin-bottom: 0;
         }
       }
+    }
+  }
+
+  .header__action {
+
+    @include transition;
+
+    padding: 10px 32px;
+    box-shadow: 12px 12px 20px 0 rgb(1 96 231 / 30%);
+    background-color: $main-color;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+      background-color: color.adjust($main-color, $lightness: -15%);
     }
   }
 }
