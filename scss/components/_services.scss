@@ -1,5 +1,8 @@
+@import "mixins";
+
 .services {
-  margin-top: 165px;
+  padding-top: 165px;
+  background-color: $background-color;
   .container {
     display: flex;
   }
@@ -34,6 +37,15 @@
     display: flex;
     justify-content: start;
     align-items: start;
+    &:hover {
+      .services__icon {
+        @include transition;
+
+        background-color: $icon-font-color;
+        color: $icon-font-color-hover;
+        box-shadow: none;
+      }
+    }
   }
   &__icon {
     min-width: 60px;
@@ -44,6 +56,15 @@
     border-radius: 100%;
     background-color: $main-color;
     box-shadow: 7px 5px 20px rgb(2 156 236 / 30%);
+    font-size: 25px;
+    color: $icon-font-color;
+    &:hover {
+      @include transition;
+
+      background-color: $icon-font-color;
+      color: $icon-font-color-hover;
+      box-shadow: none;
+    }
   }
   &__info {
     margin-left: 30px;
@@ -62,6 +83,33 @@
       color: #606060;
       margin-top: 18px;
       margin-bottom: 4px;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  .services {
+    &__items {
+      grid-template-columns: 293px 293px;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .services {
+    .container {
+      flex-direction: column;
+    }
+    &__items {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__header {
+      width: 100%;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .services {
+    &__items {
+      grid-template-columns: 1fr;
     }
   }
 }
