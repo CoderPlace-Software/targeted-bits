@@ -12,25 +12,39 @@
   </head>
 
   <body>
-    <!--main screen-->
-    <section class="promo">
-      <header class="header">
-        <a href="#">
-          <img
-            src="icons/targeted-bits-logo.svg"
-            alt="targeted-bits-logo"
-            class="header__logo"
-          />
-        </a>
+    <header class="header">
+      <a href="#">
+        <img
+          src="./images/logo.png"
+          alt="targeted-bits-logo"
+          class="header__logo"
+        />
+      </a>
+      <nav>
         <ul class="menu">
-          <li class="menu__items"><a href="#">About</a></li>
-          <li class="menu__items down-arrow"><a href="#">Services</a></li>
-          <li class="menu__items"><a href="#">Work</a></li>
-          <li class="menu__items down-arrow"><a href="#">Resources</a></li>
-          <li class="menu__items"><a href="#">Contact</a></li>
+          <li class="menu__item active"><a href="#">About</a></li>
+          <li class="menu__item down-arrow">
+            <a href="#">Services</a>
+            <ul class="submenu">
+              <li class="submenu__item"><a href="#">Content Marketing</a></li>
+              <li class="submenu__item"><a href="#">App Development</a></li>
+              <li class="submenu__item">
+                <a href="#">Search Engine Optimization</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">Social Media Marketing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">Work</a></li>
+          <li class="menu__item"><a href="#">Resources</a></li>
+          <li class="menu__item"><a href="#">Contact</a></li>
         </ul>
-        <button class="button button-search button_big">FREE SITE AUDIT</button>
-      </header>
+      </nav>
+      <button class="button button-search button_big">FREE SITE AUDIT</button>
+    </header>
+
+    <section class="promo">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"

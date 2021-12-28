@@ -1,16 +1,20 @@
 // COLORS
 $main-color: #0084dd;
 $second-color: #fe4c1c;
+$text-color: #1a1b1e;
 
 // FONTS
 $headings-font: "Barlow", sans-serif;
 $regular-font: "Red Hat Display", sans-serif;
 
+// Sizes
+$nav-height: 150px;
+
 // Bootstrap overwrites
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1140px,
-	xxl: 1170px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1173px,
 );
