@@ -1,17 +1,22 @@
 .services {
   margin-top: 165px;
+
   .container {
     display: flex;
   }
+
   &__subtitle {
     margin-left: 20px;
   }
+
   &__title {
     margin-top: 3px;
   }
+
   &__header {
     width: 370px;
   }
+
   &__description {
     font-family: $regular-font;
     font-size: 20px;
@@ -19,9 +24,11 @@
     line-height: 36px;
     margin-top: 21px;
   }
+
   &__button {
     margin-top: 48px;
   }
+
   &__items {
     margin-top: 39px;
     margin-left: 30px;
@@ -30,11 +37,13 @@
     column-gap: 28px;
     row-gap: 31px;
   }
+
   &__item {
     display: flex;
     justify-content: start;
     align-items: start;
   }
+
   &__icon {
     min-width: 60px;
     height: 60px;
@@ -45,8 +54,10 @@
     background-color: $main-color;
     box-shadow: 7px 5px 20px rgb(2 156 236 / 30%);
   }
+
   &__info {
     margin-left: 30px;
+
     .item-header {
       font-family: $headings-font;
       font-size: 22px;
@@ -54,6 +65,7 @@
       color: $text-color;
       margin-top: 11px;
     }
+
     .item-description {
       font-family: $regular-font;
       font-size: 16px;
