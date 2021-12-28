@@ -28,6 +28,10 @@
     height: 100%;
     position: relative;
 
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+
     &__item {
       list-style-type: none;
       height: 100%;
@@ -158,6 +162,25 @@
 
     &:hover {
       background-color: color.adjust($main-color, $lightness: -15%);
+    }
+
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+
+  .header__mobile-menu--open {
+    display: none;
+    height: 50px;
+    align-items: center;
+
+    img {
+      height: 20px;
+      cursor: pointer;
+    }
+
+    @include media-breakpoint-down(xl) {
+      display: flex;
     }
   }
 }

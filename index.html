@@ -12,6 +12,21 @@
   </head>
 
   <body>
+    <!--  START: Mobile Navigation mobile-menu__opened  -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__overlay"></div>
+      <div class="mobile-menu__content">
+        <div
+          class="mobile-menu__close d-flex justify-content-end"
+          id="mobile-menu-close"
+        >
+          <img src="./icons/close.svg" alt="close menu" />
+        </div>
+      </div>
+    </div>
+    <!--  END: Mobile Navigation  -->
+
+    <!--  START: Header  -->
     <header class="header">
       <a href="#">
         <img
@@ -42,7 +57,14 @@
         </ul>
       </nav>
       <button class="button header__action">FREE SITE AUDIT</button>
+      <button
+        class="button header__action header__mobile-menu--open"
+        id="mobile-menu-open"
+      >
+        <img src="./icons/menu-icon.svg" alt="Open mobile menu" />
+      </button>
     </header>
+    <!--  END: Header  -->
 
     <section class="promo">
       <div
@@ -282,5 +304,8 @@
     <section class="site-audit">
       <div class="container"></div>
     </section>
+
+    <!--    JavaScript files-->
+    <script src="./js/index.js"></script>
   </body>
 </html>
