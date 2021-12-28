@@ -206,4 +206,10 @@
       line-height: $nav-small;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    &__logo {
+      max-width: 80%;
+    }
+  }
 }
