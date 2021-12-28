@@ -2,9 +2,11 @@
 // Import from Google Fonts:
 // 1 - Barlow
 // 2 - Red Hat Display
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Red+Hat+Display:wght@400;500;700;900&display=swap");
 
 // Import icon fonts
+
 @font-face {
   font-family: icomoon;
   src: url("../fonts/icomoon.eot?dke6n");
@@ -37,18 +39,23 @@
 .icon-app-development::before {
   content: "\e900";
 }
+
 .icon-content-marketing::before {
   content: "\e901";
 }
+
 .icon-ppc-advertising::before {
   content: "\e902";
 }
+
 .icon-seo-optimization::before {
   content: "\e903";
 }
+
 .icon-social-media-marketing::before {
   content: "\e904";
 }
+
 .icon-web-development::before {
   content: "\e905";
 }
