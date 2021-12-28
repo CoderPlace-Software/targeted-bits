@@ -1,15 +1,18 @@
 .promo {
   height: 1240px;
+
   &__wrapper {
     margin-top: 228px;
     margin-left: 375px;
     width: 551px;
   }
+
   &__wrapper_active {
     margin-top: 285px;
     margin-left: 376px;
     width: 648px;
   }
+
   &__header {
     font-family: $regular-font;
     font-size: 56px;
@@ -18,50 +21,59 @@
     margin-top: 19px;
     margin-bottom: 30px;
   }
+
   &__header_active {
     font-family: $headings-font;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 75px;
+
     .change-color {
       color: $second-color;
     }
   }
+
   .subtitle-wrapper {
     width: 178px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &__divider {
       width: 2px;
       height: 32px;
       background-color: #a5b7d2;
     }
   }
+
   .stars {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
   }
+
   .year {
     font-family: $regular-font;
     font-size: 14px;
     font-weight: 900;
     color: #a5b7d2;
   }
+
   .subtitle {
     font-family: $regular-font;
     font-size: 14px;
     font-weight: 700;
     color: #a5b7d2;
+
     &-width {
       width: 85px;
       font-size: 13px;
       font-weight: 500;
     }
   }
+
   &__description {
     font-family: $regular-font;
     font-size: 22px;
@@ -70,6 +82,7 @@
     color: $text-color;
     margin-bottom: 51px;
   }
+
   &__phone {
     margin-left: 97px;
     text-decoration: none;
@@ -78,6 +91,7 @@
     font-size: 16px;
     font-weight: 700;
     position: relative;
+
     &::before {
       content: url("../icons/phone.svg");
       position: absolute;
@@ -93,6 +107,7 @@
       border-radius: 100%;
       transition: all 0.15s ease-out;
     }
+
     &:hover {
       color: #00c3ff;
       transition: all 0.15s ease-out;
