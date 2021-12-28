@@ -11,7 +11,7 @@
 		width: 648px;
 	}
 	&__header {
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 56px;
 		font-weight: 900;
 		color: #1a1b1e;
@@ -19,7 +19,7 @@
 		margin-bottom: 30px;
 	}
 	&__header_active {
-		font-family: $headings;
+		font-family: $headings-font;
 		font-weight: 700;
 		text-transform: uppercase;
 		margin-top: 0;
@@ -46,13 +46,13 @@
 		align-items: center;
 	}
 	.year {
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 14px;
 		font-weight: 900;
 		color: #a5b7d2;
 	}
 	.subtitle {
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 14px;
 		font-weight: 700;
 		color: #a5b7d2;
@@ -63,7 +63,7 @@
 		}
 	}
 	&__description {
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 22px;
 		font-weight: 400;
 		line-height: 36px;
@@ -74,7 +74,7 @@
 		margin-left: 97px;
 		text-decoration: none;
 		color: #00c3ff;
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 16px;
 		font-weight: 700;
 		position: relative;

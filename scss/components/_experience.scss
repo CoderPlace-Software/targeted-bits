@@ -23,20 +23,18 @@
 		justify-content: space-between;
 		align-items: center;
 		&:before {
-			content: url("../img/girl.svg");
+			content: url("../images/girl.svg");
 			position: absolute;
 			transform: translateX(-90%);
 			bottom: 0;
-			background: url("../img/girlhand.svg") no-repeat;
-			background-position: top 20px right -10px;
+			background: url("../images/girlhand.svg") no-repeat top 20px right -10px;
 		}
 		&:after {
-			content: url("../img/boy.svg");
+			content: url("../images/boy.svg");
 			position: absolute;
 			right: -6%;
 			bottom: 0;
-			background: url("../img/boyhand.svg") no-repeat;
-			background-position: top 20px left 10px;
+			background: url("../images/boyhand.svg") no-repeat top 20px left 10px;
 		}
 	}
 	&__item {
@@ -72,13 +70,13 @@
 		}
 	}
 	&__number {
-		font-family: $headings;
+		font-family: $headings-font;
 		font-size: 36px;
 		font-weight: 700;
 		margin-top: 59px;
 	}
 	&__description {
-		font-family: $regular-text;
+		font-family: $regular-font;
 		font-size: 18px;
 		font-weight: 500;
 		margin-top: 9px;
