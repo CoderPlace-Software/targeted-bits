@@ -5,6 +5,13 @@
 // Styles for navigation
 
 .header {
+
+  @include transition;
+
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
   height: $nav-height;
   padding: 0 38px;
   display: flex;
@@ -13,6 +20,10 @@
   box-shadow: 2px 2px 15px 0 rgb(42 67 113 / 15%);
 
   &__logo {
+
+    @include transition;
+
+    max-height: 95px;
     position: relative;
     top: -9px;
   }
@@ -181,6 +192,18 @@
 
     @include media-breakpoint-down(xl) {
       display: flex;
+    }
+  }
+
+  &__small {
+    height: $nav-small;
+
+    .header__logo {
+      max-height: 80px;
+    }
+
+    .menu__item {
+      line-height: $nav-small;
     }
   }
 }
