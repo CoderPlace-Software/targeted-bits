@@ -3,18 +3,23 @@
 .services {
   padding-top: 165px;
   background-color: $background-color;
+
   .container {
     display: flex;
   }
+
   &__subtitle {
     margin-left: 20px;
   }
+
   &__title {
     margin-top: 3px;
   }
+
   &__header {
     width: 370px;
   }
+
   &__description {
     font-family: $regular-font;
     font-size: 20px;
@@ -22,9 +27,11 @@
     line-height: 36px;
     margin-top: 21px;
   }
+
   &__button {
     margin-top: 48px;
   }
+
   &__items {
     margin-top: 39px;
     margin-left: 30px;
@@ -33,12 +40,15 @@
     column-gap: 28px;
     row-gap: 31px;
   }
+
   &__item {
     display: flex;
     justify-content: start;
     align-items: start;
+
     &:hover {
       .services__icon {
+
         @include transition;
 
         background-color: $icon-font-color;
@@ -47,6 +57,7 @@
       }
     }
   }
+
   &__icon {
     min-width: 60px;
     height: 60px;
@@ -58,7 +69,9 @@
     box-shadow: 7px 5px 20px rgb(2 156 236 / 30%);
     font-size: 25px;
     color: $icon-font-color;
+
     &:hover {
+
       @include transition;
 
       background-color: $icon-font-color;
@@ -66,8 +79,10 @@
       box-shadow: none;
     }
   }
+
   &__info {
     margin-left: 30px;
+
     .item-header {
       font-family: $headings-font;
       font-size: 22px;
@@ -75,6 +90,7 @@
       color: $text-color;
       margin-top: 11px;
     }
+
     .item-description {
       font-family: $regular-font;
       font-size: 16px;
@@ -86,6 +102,7 @@
     }
   }
 }
+
 @include media-breakpoint-down(xl) {
   .services {
     &__items {
@@ -93,19 +110,23 @@
     }
   }
 }
+
 @include media-breakpoint-down(lg) {
   .services {
     .container {
       flex-direction: column;
     }
+
     &__items {
       grid-template-columns: 1fr 1fr;
     }
+
     &__header {
       width: 100%;
     }
   }
 }
+
 @include media-breakpoint-down(md) {
   .services {
     &__items {

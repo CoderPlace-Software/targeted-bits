@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "style": "stylelint src/scss/**/*.scss --fix"
+    "style": "stylelint src/scss/**/*.scss --fix",
+    "eslint": "eslint src/js/**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,6 @@
   },
   "lint-staged": {
     "*.scss": "npm run style",
-    "*.js": "eslint --cache --fix"
+    "*.js": "npm run eslint"
   }
 }

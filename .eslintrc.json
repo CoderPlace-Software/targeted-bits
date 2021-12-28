@@ -1,3 +1,15 @@
 {
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+  }
 }

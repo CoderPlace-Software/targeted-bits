@@ -9,8 +9,10 @@
     "property-no-unknown": true,
     "max-empty-lines": 1,
     "value-keyword-case": "lower",
-    "at-rule-empty-line-before": null,
-    "rule-empty-line-before": null,
+    "at-rule-empty-line-before": "always",
+    "rule-empty-line-before": ["always", {
+      "except": ["first-nested"]
+    }],
     "no-descending-specificity": null,
     "selector-class-pattern": null,
     "string-quotes": "double"
