@@ -15,4 +15,15 @@
     border-radius: 100%;
     transform: translate(-20px, 4px);
   }
+
+  &_white {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $icon-font-color;
+
+    &::before {
+      content: none;
+    }
+  }
 }

@@ -5,4 +5,10 @@
   font-weight: 800;
   color: $text-color;
   text-transform: capitalize;
+
+  &_white {
+    font-size: 48px;
+    line-height: 80px;
+    color: $icon-font-color;
+  }
 }
