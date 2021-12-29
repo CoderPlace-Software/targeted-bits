@@ -1,0 +1,73 @@
+.promo {
+  height: 1000px;
+  margin-top: $nav-small;
+  display: flex;
+  align-items: center;
+  background: url("../../images/hero/hero-bg-1.png"),
+    url("../../images/hero/hero-bg-2.png"),
+    url("../../images/hero/hero-bg-left.png"),
+    url("../../images/hero/hero-bg-3.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: right -720px top -350px, right -970px top -380px,
+    left -740px top 100px, right 0 top 100px;
+
+  &__wrapper {
+    max-width: 55%;
+  }
+
+  &__header {
+    font-family: $regular-font;
+    font-size: 56px;
+    font-weight: 900;
+    color: $text-color;
+    margin-top: 19px;
+    margin-bottom: 30px;
+  }
+
+  &__header_active {
+    font-family: $headings-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 75px;
+
+    .change-color {
+      color: $second-color;
+    }
+  }
+
+  .subtitle-wrapper {
+    width: 178px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__divider {
+      width: 2px;
+      height: 32px;
+      background-color: #a5b7d2;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: right -1110px top -350px, right -1350px top -380px,
+      left -740px top 100px, right 0 top 100px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 500px;
+    background: url("../../images/hero/hero-bg-left.png"),
+      url("../../images/hero/hero-bg-3.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -740px top 100px, right 0 top 100px;
+
+    &__wrapper {
+      max-width: 100%;
+    }
+
+    &__header {
+      font-size: 40px;
+    }
+  }
+}
