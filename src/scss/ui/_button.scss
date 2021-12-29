@@ -60,5 +60,11 @@
         height: 46px;
       }
     }
+
+    &.button__submit {
+      &::after {
+        background-color: #fe7049;
+      }
+    }
   }
 }
