@@ -4,6 +4,7 @@ const sass = require("gulp-sass")(require("sass"));
 const rename = require("gulp-rename");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
+const replace = require("gulp-replace");
 
 // Static server
 gulp.task("server", function () {
@@ -17,7 +18,12 @@ gulp.task("server", function () {
 gulp.task("styles", function () {
   return gulp
     .src("./src/scss/**/*.+(scss|sass)")
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(
+      sass({ outputStyle: "compressed", imagePath: "" }).on(
+        "error",
+        sass.logError
+      )
+    )
     .pipe(
       rename({
         prefix: "",
@@ -30,6 +36,7 @@ gulp.task("styles", function () {
       })
     )
     .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(replace("/src/", "../"))
     .pipe(gulp.dest("./src/css"))
     .pipe(browserSync.stream());
 });
