@@ -1,10 +1,11 @@
 .site-audit {
-  margin-top: 115px;
+  padding-top: 115px;
 
   &__wrapper {
     min-height: 320px;
     background: linear-gradient(90deg, #ff403e, #ff4a1b);
     border-radius: 15px;
+    box-shadow: 19px 14px 87px rgb(254 76 28 / 42%);
   }
 
   &__title {
@@ -15,6 +16,7 @@
   &__subtitle {
     width: 390px;
     margin: 10px auto 0;
+    text-align: center;
   }
 
   &__form-wrapper {
@@ -31,9 +33,15 @@
     align-items: center;
 
     input {
-      width: 40%;
       height: 26px;
       border: none;
+
+      &::placeholder {
+        font-family: $regular-font;
+        font-size: 16px;
+        font-weight: 400;
+        color: #7e7e7e;
+      }
     }
 
     .form-divider {
