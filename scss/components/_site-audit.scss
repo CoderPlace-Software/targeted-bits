@@ -14,7 +14,7 @@
   }
 
   &__subtitle {
-    width: 390px;
+    max-width: 390px;
     margin: 10px auto 0;
     text-align: center;
   }
@@ -49,6 +49,33 @@
       height: 30px;
       background-color: #000;
       opacity: 0.1;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .site-audit {
+    &__wrapper {
+      padding-bottom: 10px;
+    }
+
+    &__form-wrapper {
+      width: 80%;
+    }
+
+    &__form {
+      flex-direction: column;
+      gap: 10px;
+
+      .form-divider {
+        display: none;
+      }
+
+      input {
+        border: 1px solid #ff403e;
+        border-radius: 10px;
+        padding-left: 3px;
+      }
     }
   }
 }
