@@ -1,0 +1,71 @@
+.about {
+  margin-top: 96px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    position: relative;
+
+    &-title {
+      width: 209px;
+      height: 234px;
+      font-family: $regular-font;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 22px;
+      color: #fff;
+      background-image: url("../images/wave-about.png");
+      background-position: center;
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+
+      div {
+        margin-bottom: 101px;
+        margin-left: 41px;
+        margin-right: 65px;
+      }
+
+      .number {
+        margin-top: 69px;
+        margin-bottom: 0;
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+  }
+
+  &__small-image {
+    position: absolute;
+    top: 20px;
+    left: -70px;
+  }
+
+  &__info {
+    padding: 44px 0 0 133px;
+  }
+
+  &__subtitle {
+    margin-left: 20px;
+  }
+
+  &__title {
+    margin-top: 6px;
+    max-width: 90%;
+  }
+
+  &__description {
+    margin-top: 45px;
+    font-family: $regular-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
+}
