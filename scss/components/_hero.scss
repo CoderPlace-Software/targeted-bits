@@ -3,10 +3,10 @@
   margin-top: $nav-small;
   display: flex;
   align-items: center;
-  background: url("../../images/hero/hero-bg-1.png"),
-    url("../../images/hero/hero-bg-2.png"),
-    url("../../images/hero/hero-bg-left.png"),
-    url("../../images/hero/hero-bg-3.png");
+  background: url("/src/images/hero/hero-bg-1.png"),
+    url("/src/images/hero/hero-bg-2.png"),
+    url("/src/images/hero/hero-bg-left.png"),
+    url("/src/images/hero/hero-bg-3.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: right -720px top -350px, right -970px top -380px,
     left -740px top 100px, right 0 top 100px;
@@ -57,8 +57,8 @@
 
   @include media-breakpoint-down(md) {
     height: 500px;
-    background: url("../../images/hero/hero-bg-left.png"),
-      url("../../images/hero/hero-bg-3.png");
+    background: url("/src/images/hero/hero-bg-left.png"),
+      url("/src/images/hero/hero-bg-3.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left -740px top 100px, right 0 top 100px;
 

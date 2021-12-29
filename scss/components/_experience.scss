@@ -1,6 +1,15 @@
 .experience {
   background-color: $background-color;
 
+  &::before {
+    content: "";
+    background-image: url("/src/images/waves/wave-1.svg");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    display: block;
+  }
+
   &__subtitle {
     text-align: center;
     margin-top: 164px;
