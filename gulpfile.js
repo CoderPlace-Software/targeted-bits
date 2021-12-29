@@ -9,7 +9,7 @@ const cleanCSS = require("gulp-clean-css");
 gulp.task("server", function () {
   browserSync.init({
     server: {
-      baseDir: "./",
+      baseDir: "./src/",
     },
   });
 });
