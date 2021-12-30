@@ -3,13 +3,32 @@
   margin-top: $nav-small;
   display: flex;
   align-items: center;
-  background: url("/src/images/hero/hero-bg-1.png"),
-    url("/src/images/hero/hero-bg-2.png"),
-    url("/src/images/hero/hero-bg-left.png"),
+  position: relative;
+  background: url("/src/images/hero/hero-bg-left.png"),
     url("/src/images/hero/hero-bg-3.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: right -720px top -350px, right -970px top -380px,
-    left -740px top 100px, right 0 top 100px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -740px top 100px, right 0 top 100px;
+
+  &__bg_left {
+    position: absolute;
+    left: 0;
+    top: 140px;
+    z-index: -1;
+  }
+
+  &__bg_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__bg_right-blue {
+    position: absolute;
+    right: -330px;
+    top: 20px;
+    z-index: -1;
+  }
 
   &__wrapper {
     max-width: 55%;
@@ -53,6 +72,20 @@
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: right -1110px top -350px, right -1350px top -380px,
       left -740px top 100px, right 0 top 100px;
+
+    &__bg_right {
+      position: absolute;
+      right: -400px;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__bg_right-blue {
+      position: absolute;
+      right: -730px;
+      top: 20px;
+      z-index: -1;
+    }
   }
 
   @include media-breakpoint-down(md) {
@@ -68,6 +101,14 @@
 
     &__header {
       font-size: 40px;
+    }
+
+    &__bg_right {
+      display: none;
+    }
+
+    &__bg_right-blue {
+      display: none;
     }
   }
 }
