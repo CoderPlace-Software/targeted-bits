@@ -111,6 +111,14 @@
 
 // Start media styles
 
+@include media-breakpoint-down(xxl) {
+  .experience {
+    .container {
+      padding: 0 35px;
+    }
+  }
+}
+
 @include media-breakpoint-down(xl) {
   .experience {
     &__item {

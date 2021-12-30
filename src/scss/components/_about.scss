@@ -11,6 +11,7 @@
 
   &__image {
     position: relative;
+    height: 569px;
 
     &-title {
       width: 209px;
@@ -70,5 +71,102 @@
 
   &__button {
     margin-top: 60px;
+  }
+}
+
+// Start media styles
+
+@include media-breakpoint-down(xxl) {
+  .about {
+    &__image {
+      margin-left: 100px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .about {
+    &__image {
+      height: 455px;
+    }
+
+    &__main-img {
+      width: 455px;
+      height: 455px;
+    }
+
+    &__title {
+      max-width: 100%;
+      font-size: 36px;
+    }
+
+    &__info {
+      padding-left: 80px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__image {
+      height: 629px;
+    }
+
+    &__main-img {
+      width: 629px;
+      height: 629px;
+    }
+
+    &__info {
+      padding-left: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .about {
+    &__image {
+      height: auto;
+    }
+
+    &__main-img {
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .about {
+    &__image {
+      &-title {
+        width: 150px;
+        height: 180px;
+        font-size: 10px;
+        background-size: 120px 150px;
+        background-repeat: no-repeat;
+
+        div {
+          margin-left: 37px;
+          margin-right: 60px;
+        }
+
+        .number {
+          font-size: 30px;
+          line-height: 40px;
+          margin-top: 50px;
+        }
+      }
+    }
+
+    &__small-image {
+      width: 19%;
+    }
   }
 }
