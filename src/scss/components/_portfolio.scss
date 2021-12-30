@@ -16,6 +16,7 @@
   }
 
   .portfolio__items {
+    padding: 0 52px;
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -62,8 +63,9 @@
       justify-content: center;
     }
 
-    .portfolio__project {
+    .portfolio__project a {
       font-size: 36px;
+      display: block;
       color: #fff;
       font-family: $headings-font;
       text-align: center;
@@ -118,6 +120,51 @@
     &__header-wrapper {
       flex-direction: column;
       gap: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    .portfolio__items {
+      grid-template-areas: none;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .c1,
+    .c2,
+    .c3,
+    .c4,
+    .c5,
+    .c6 {
+      grid-area: unset;
+    }
+  }
+}
+
+// todo can be moved outside
+
+.clickable-block {
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  a:focus {
+    outline: none;
+  }
+
+  &:focus-within {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  a {
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
     }
   }
 }
