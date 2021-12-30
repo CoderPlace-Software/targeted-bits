@@ -17,6 +17,7 @@
     max-width: 390px;
     margin: 10px auto 0;
     text-align: center;
+    text-transform: none;
   }
 
   &__form-wrapper {
@@ -61,6 +62,7 @@
 
     &__form-wrapper {
       width: 80%;
+      background-color: transparent;
     }
 
     &__form {
@@ -73,8 +75,28 @@
 
       input {
         border: 1px solid #ff403e;
-        border-radius: 10px;
-        padding-left: 3px;
+        border-radius: 23px;
+        padding-left: 20px;
+        width: 80%;
+        height: 48px;
+      }
+    }
+
+    .button__submit {
+      background-color: $main-color;
+
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .site-audit {
+    &__form {
+      input {
+        width: 100%;
       }
     }
   }
