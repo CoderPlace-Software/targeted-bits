@@ -1,0 +1,198 @@
+.insights {
+  margin-top: 134px;
+
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-left: 20px;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__description {
+    margin-top: 27px;
+    font-family: $regular-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 554px;
+  }
+
+  &__items {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    width: 370px;
+    min-height: 520px;
+    border-radius: 15px;
+    box-shadow: 7px 5px 30px rgb(42 67 113 / 10%);
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__img-info {
+    margin-top: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 38px;
+  }
+
+  &__subheader {
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      font-family: $regular-font;
+      font-size: 14px;
+      font-weight: 500;
+      color: #a5b7d2;
+
+      &:hover {
+
+        @include transition;
+
+        color: $text-color;
+      }
+    }
+  }
+
+  &__author {
+    padding-right: 10px;
+
+    &::before {
+      content: url("../icons/insights/author-before.png");
+      padding-right: 7px;
+    }
+  }
+
+  &__date {
+    &::before {
+      content: url("../icons/insights/date-before.png");
+      padding-right: 5px;
+    }
+  }
+
+  .item-header {
+    margin-top: 13px;
+
+    a {
+      font-family: $headings-font;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 36px;
+      color: $text-color;
+
+      &:hover {
+
+        @include transition;
+
+        color: $second-color;
+      }
+    }
+  }
+
+  .item-description {
+    font-family: $regular-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #606060;
+    margin-top: 20px;
+  }
+
+  &__item-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: $regular-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: $second-color;
+
+    &:hover {
+
+      @include transition;
+
+      color: $second-color;
+      background-color: #fff;
+    }
+  }
+}
+
+// Start adaptive styles
+
+@include media-breakpoint-down(xxl) {
+  .insights {
+    &__item {
+      width: 293px;
+    }
+
+    &__subheader {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .insights {
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      column-gap: 30px;
+    }
+
+    &__item {
+      width: 333px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .insights {
+    &__header-wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 10px;
+    }
+
+    &__items {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__subheader {
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
