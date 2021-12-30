@@ -2,6 +2,7 @@
   height: 1000px;
   margin-top: $nav-small;
   display: flex;
+  overflow: hidden;
   align-items: center;
   position: relative;
   background: url("/src/images/hero/hero-bg-left.png"),
