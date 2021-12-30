@@ -1,7 +1,123 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
 .portfolio {
   padding: 150px 0;
+  max-width: 100%;
 
   .subtitle {
     margin-left: 20px;
+  }
+
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 116px;
+  }
+
+  .portfolio__items {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: $portfolio-item-height $portfolio-item-height;
+    gap: 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "c1 c1 c2 c3"
+      "c4 c5 c6 c6";
+  }
+
+  .portfolio__item {
+
+    @include transition(0.5s);
+
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+
+    img {
+
+      @include transition;
+
+      display: block;
+      width: 100%;
+      height: $portfolio-item-height;
+      object-fit: cover;
+    }
+
+    &__description {
+
+      @include transition;
+
+      position: absolute;
+      top: 21px;
+      bottom: 21px;
+      left: 21px;
+      right: 21px;
+      background: #0049b1;
+      border-radius: 15px;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .portfolio__project {
+      font-size: 36px;
+      color: #fff;
+      font-family: $headings-font;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .portfolio__category {
+      font-size: 13px;
+      color: #00c3ff;
+      font-weight: bold;
+      font-family: $regular-font;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .portfolio__item__description {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .c1 {
+    grid-area: c1;
+  }
+
+  .c2 {
+    grid-area: c2;
+  }
+
+  .c3 {
+    grid-area: c3;
+  }
+
+  .c4 {
+    grid-area: c4;
+  }
+
+  .c5 {
+    grid-area: c5;
+  }
+
+  .c6 {
+    grid-area: c6;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__header-wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
