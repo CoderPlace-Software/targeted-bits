@@ -1,8 +1,12 @@
 .about {
   margin-top: 96px;
-  background-image: url("/src/images/about-bg-right.png");
-  background-repeat: no-repeat;
-  background-position: right top;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   .container {
     display: flex;
@@ -21,16 +25,20 @@
       font-weight: 900;
       line-height: 22px;
       color: #fff;
-      background-image: url("../images/wave-about.png");
-      background-position: center;
       position: absolute;
       bottom: -28px;
       left: 0;
+
+      img {
+        position: absolute;
+      }
 
       div {
         margin-bottom: 101px;
         margin-left: 41px;
         margin-right: 65px;
+        position: relative;
+        z-index: 11;
       }
 
       .number {
@@ -38,6 +46,8 @@
         margin-bottom: 0;
         font-size: 48px;
         line-height: 58px;
+        position: relative;
+        z-index: 11;
       }
     }
   }
