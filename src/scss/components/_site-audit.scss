@@ -4,6 +4,7 @@
   z-index: 1;
 
   &__wrapper {
+    overflow: hidden;
     position: relative;
     min-height: 320px;
     background: linear-gradient(90deg, #ff403e, #ff4a1b);

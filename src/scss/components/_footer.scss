@@ -92,6 +92,16 @@
           color: #7e7e7e;
         }
       }
+
+      button {
+        background: $second-color;
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        margin-right: 5px;
+      }
     }
   }
 
