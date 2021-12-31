@@ -1,11 +1,32 @@
 .site-audit {
-  padding-top: 115px;
+  margin-top: -195px;
+  position: relative;
+  z-index: 1;
 
   &__wrapper {
+    position: relative;
     min-height: 320px;
     background: linear-gradient(90deg, #ff403e, #ff4a1b);
     border-radius: 15px;
     box-shadow: 19px 14px 87px rgb(254 76 28 / 42%);
+
+    img {
+      position: absolute;
+      top: 0;
+      opacity: 0.5;
+      z-index: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      max-height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .site-audit__inner {
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -50,6 +71,12 @@
       height: 30px;
       background-color: #000;
       opacity: 0.1;
+    }
+  }
+
+  .button__submit {
+    &::after {
+      color: #fff;
     }
   }
 }

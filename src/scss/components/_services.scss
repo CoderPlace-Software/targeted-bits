@@ -1,5 +1,6 @@
 .services {
   padding-top: 165px;
+  padding-bottom: 200px;
   background-color: $background-color;
 
   .container {
@@ -27,9 +28,6 @@
   }
 
   &__button {
-    // todo consider moving font to _button.scss
-    font-weight: 600;
-    font-size: 18px;
     margin-top: 48px;
   }
 

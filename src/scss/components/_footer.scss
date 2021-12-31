@@ -5,16 +5,10 @@
   background: linear-gradient(135deg, #025994, #0097fc);
   padding-top: 233px;
 
-  &__wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 155px;
-  }
-
   &__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &-items {
+      margin-bottom: 20px;
+    }
 
     &-item {
       padding-bottom: 20px;
@@ -70,7 +64,7 @@
     &__description {
       margin-top: 31px;
       font-size: 16px;
-      font-weight: 400px;
+      font-weight: 400;
       color: #9ee8ff;
     }
 
@@ -102,7 +96,7 @@
   }
 
   &__copyright {
-    margin-top: 77px;
+    margin-top: 57px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -117,7 +111,7 @@
 
   &__wave {
     position: absolute;
-    top: 0;
+    top: -1px;
     width: 100%;
   }
 }

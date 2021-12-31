@@ -10,13 +10,13 @@
   border-radius: 28px;
   font-family: $headings-font;
   border: none;
-  font-size: 18px; // todo check me
-  font-weight: 600; // todo check me
-  padding: 10px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 11px 32px;
   position: relative;
 
   &__big {
-    padding: 13px 33px;
+    padding: 15px 33px;
   }
 
   &__small {
@@ -47,7 +47,9 @@
     padding-right: 60px;
 
     &::after {
-      content: url("/src/icons/arrow-pointing-to-right-orange.svg");
+      content: "\e900";
+      /* stylelint-disable font-family-no-missing-generic-family-keyword, font-family-name-quotes */
+      font-family: "icomoon";
       position: absolute;
       right: 5px;
       top: 5px;
@@ -58,6 +60,19 @@
       align-items: center;
       border-radius: 50%;
       background-color: #fff;
+      font-size: 13px;
+    }
+
+    &.button__red {
+      &::after {
+        color: $second-color;
+      }
+    }
+
+    &.button__blue {
+      &::after {
+        color: $main-color;
+      }
     }
 
     &.button__big {
