@@ -73,6 +73,12 @@
       opacity: 0.1;
     }
   }
+
+  .button__submit {
+    &::after {
+      color: #fff;
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {
