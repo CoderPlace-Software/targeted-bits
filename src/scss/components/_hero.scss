@@ -5,10 +5,6 @@
   overflow: hidden;
   align-items: center;
   position: relative;
-  background: url("/src/images/hero/hero-bg-left.png"),
-    url("/src/images/hero/hero-bg-3.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left -740px top 100px, right 0 top 100px;
 
   &__bg_left {
     position: absolute;
@@ -21,6 +17,13 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -1;
+  }
+
+  &__bg_drop {
+    position: absolute;
+    right: 0;
+    top: 110px;
     z-index: -1;
   }
 
