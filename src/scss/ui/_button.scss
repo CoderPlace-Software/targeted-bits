@@ -19,6 +19,10 @@
     padding: 13px 33px;
   }
 
+  &__small {
+    padding: 25px;
+  }
+
   &__blue {
     box-shadow: 12px 12px 20px 0 rgb(1 96 231 / 30%);
     background-color: $main-color;

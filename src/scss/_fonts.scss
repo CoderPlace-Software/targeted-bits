@@ -9,11 +9,12 @@
 
 @font-face {
   font-family: icomoon;
-  src: url("../fonts/fonts/icomoon.eot?m0l87");
-  src: url("../fonts/fonts/icomoon.eot?m0l87#iefix") format("embedded-opentype"),
-    url("../fonts/fonts/icomoon.ttf?m0l87") format("truetype"),
-    url("../fonts/fonts/icomoon.woff?m0l87") format("woff"),
-    url("../fonts/fonts/icomoon.svg?m0l87#icomoon") format("svg");
+  src: url("../fonts/fonts/icomoon.eot?dnozn7");
+  src: url("../fonts/fonts/icomoon.eot?dnozn7#iefix")
+    format("embedded-opentype"),
+    url("../fonts/fonts/icomoon.ttf?dnozn7") format("truetype"),
+    url("../fonts/fonts/icomoon.woff?dnozn7") format("woff"),
+    url("../fonts/fonts/icomoon.svg?dnozn7#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,30 +37,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-pointing-to-right-blue::after {
-  content: "\e906";
-}
-
-.icon-app-development::before {
+.icon-arrow-pointing-to-right-blue::before {
   content: "\e900";
 }
 
-.icon-content-marketing::before {
+.icon-app-development::before {
   content: "\e901";
 }
 
-.icon-ppc-advertising::before {
+.icon-content-marketing::before {
   content: "\e902";
 }
 
-.icon-seo-optimization::before {
+.icon-ppc-advertising::before {
   content: "\e903";
 }
 
-.icon-social-media-marketing::before {
+.icon-seo-optimization::before {
   content: "\e904";
 }
 
-.icon-web-development::before {
+.icon-social-media-marketing::before {
   content: "\e905";
+}
+
+.icon-web-development::before {
+  content: "\e906";
+}
+
+.icon-telegram::before {
+  content: "\ea95";
 }

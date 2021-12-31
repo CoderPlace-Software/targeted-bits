@@ -34,7 +34,7 @@
   &__item {
     position: relative;
     width: 370px;
-    min-height: 520px;
+    min-height: $insights-min-height;
     border-radius: 15px;
     box-shadow: 7px 5px 30px rgb(42 67 113 / 10%);
 

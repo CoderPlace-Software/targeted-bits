@@ -1,0 +1,123 @@
+.footer {
+  position: relative;
+  margin-top: 185px;
+  min-height: 918px;
+  background: linear-gradient(135deg, #025994, #0097fc);
+  padding-top: 233px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 155px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      padding-bottom: 20px;
+
+      a {
+        font-family: $regular-font;
+        font-size: 16px;
+        font-weight: 400px;
+        color: #9ee8ff;
+
+        &:hover {
+
+          @include transition;
+
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &-item-header {
+      padding-bottom: 31px;
+
+      a {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+
+        &:hover {
+
+          @include transition;
+
+          text-decoration: none;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    font-family: $regular-font;
+
+    &__header {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &__description {
+      margin-top: 31px;
+      font-size: 16px;
+      font-weight: 400px;
+      color: #9ee8ff;
+    }
+
+    &__form-wrapper {
+      margin-top: 25px;
+      min-width: 270px;
+      border-radius: 23px;
+      background-color: #fff;
+      padding-left: 20px;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        height: 46px;
+        border: none;
+
+        &::placeholder {
+          font-family: $regular-font;
+          font-size: 16px;
+          font-weight: 400;
+          color: #7e7e7e;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-info {
+      font-family: $regular-font;
+      font-size: 15px;
+      font-weight: 400;
+      color: #acebff;
+    }
+  }
+
+  &__wave {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
