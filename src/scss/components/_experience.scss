@@ -1,7 +1,7 @@
 .experience {
   &__subtitle {
     text-align: center;
-    margin-top: 164px;
+    margin-top: 64px;
 
     &::after {
 
@@ -13,7 +13,7 @@
       height: 7px;
       background-color: #a5b7d2;
       border-radius: 100%;
-      transform: translate(27px, 4px);
+      transform: translate(13px, 4px);
     }
   }
 
@@ -51,7 +51,7 @@
     background-color: #fff;
     box-shadow: 7px 5px 30px rgb(42 67 113 / 10%);
 
-    &:nth-child(1) {
+    &:nth-child(2) {
       .text-color {
         color: #00c3ff;
       }
@@ -61,7 +61,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(3) {
       .text-color {
         color: #0160e7;
       }
@@ -71,7 +71,7 @@
       }
     }
 
-    &:nth-child(3) {
+    &:nth-child(4) {
       .text-color {
         color: #fe4c1c;
       }

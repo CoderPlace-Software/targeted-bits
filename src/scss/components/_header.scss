@@ -16,6 +16,26 @@
   align-items: center;
   box-shadow: 2px 2px 15px 0 rgb(42 67 113 / 15%);
 
+  @include media-breakpoint-down(xl) {
+    height: 130px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: 110px;
+
+    img {
+      max-height: 63%;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 90px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 70px;
+  }
+
   &__logo {
 
     @include transition;
