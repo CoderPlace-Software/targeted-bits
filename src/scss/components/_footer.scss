@@ -8,7 +8,14 @@
     rgb(2 89 148 / 100%) 60%,
     rgb(2 89 148 / 100%) 100%
   );
-  padding-top: 233px;
+
+  .footer__wave-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    top: -1px;
+  }
 
   &__navigation {
     &-items {
