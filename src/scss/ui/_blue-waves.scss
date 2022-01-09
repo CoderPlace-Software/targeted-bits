@@ -34,7 +34,6 @@
   &-portfolio::before {
     background-image: url("../images/waves/wave2.svg");
     height: 149px;
-    margin-top: 126px;
     margin-left: -712px;
     width: calc(100% + 712px);
   }
@@ -44,5 +43,6 @@
     position: relative;
     left: -19px;
     width: calc(100% + 208px);
+    height: 168px;
   }
 }
