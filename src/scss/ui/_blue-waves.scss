@@ -1,5 +1,6 @@
 .blue-waves {
   background: $background-color;
+  overflow: hidden;
 
   &::before,
   &::after {

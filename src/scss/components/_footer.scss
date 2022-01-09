@@ -2,7 +2,12 @@
   position: relative;
   margin-top: 185px;
   min-height: 918px;
-  background: linear-gradient(150deg, #025994 39%, #025994, #0098ff);
+  background: linear-gradient(
+    331deg,
+    rgb(0 152 255 / 100%) 0%,
+    rgb(2 89 148 / 100%) 60%,
+    rgb(2 89 148 / 100%) 100%
+  );
   padding-top: 233px;
 
   &__navigation {
