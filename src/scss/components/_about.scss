@@ -2,6 +2,7 @@
   margin-top: 96px;
   padding-bottom: 128px;
   position: relative;
+  overflow: hidden;
 
   &__bg {
     position: absolute;
@@ -12,6 +13,12 @@
     @include media-breakpoint-down(lg) {
       display: none;
     }
+  }
+
+  &__bg_drop {
+    position: absolute;
+    left: 184px;
+    top: 0;
   }
 
   .container {
