@@ -57,7 +57,9 @@
       }
 
       img {
-        transform: translateX(-35px);
+        width: calc(100% + 52px);
+        position: relative;
+        left: -35px;
       }
     }
 
@@ -67,13 +69,21 @@
       }
 
       img {
-        transform: translateX(-7px);
+        width: calc(100% + 13px);
+        position: relative;
+        left: -7px;
       }
     }
 
     &:nth-child(4) {
       .text-color {
         color: #fe4c1c;
+      }
+
+      img {
+        width: calc(100% + 44px);
+        position: relative;
+        left: -17px;
       }
     }
   }
