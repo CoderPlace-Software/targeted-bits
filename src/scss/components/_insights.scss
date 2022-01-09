@@ -1,5 +1,6 @@
 .insights {
   margin-top: 134px;
+  position: relative;
 
   &__header-wrapper {
     display: flex;
@@ -43,6 +44,13 @@
     }
   }
 
+  &__bg-right {
+    position: absolute;
+    right: 0;
+    top: 105px;
+    z-index: -1;
+  }
+
   &__img {
     width: 100%;
   }
@@ -77,14 +85,14 @@
     padding-right: 10px;
 
     &::before {
-      content: url("../icons/insights/author-before.png");
+      content: url("../icons/insights/author-before.svg");
       padding-right: 7px;
     }
   }
 
   &__date {
     &::before {
-      content: url("../icons/insights/date-before.png");
+      content: url("../icons/insights/date-before.svg");
       padding-right: 5px;
     }
   }
@@ -145,7 +153,19 @@
 @include media-breakpoint-down(xxl) {
   .insights {
     &__item {
-      width: 293px;
+      width: 350px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .insights {
+    &__items {
+      column-gap: 10px;
+    }
+
+    &__item {
+      flex: 1;
     }
 
     &__subheader {
@@ -167,6 +187,10 @@
 
     &__item {
       width: 333px;
+    }
+
+    &__bg-right {
+      display: none;
     }
   }
 }

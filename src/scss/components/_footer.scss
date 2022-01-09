@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 185px;
   min-height: 918px;
-  background: linear-gradient(135deg, #025994, #0097fc);
+  background: linear-gradient(150deg, #025994 39%, #025994, #0098ff);
   padding-top: 233px;
 
   &__navigation {
@@ -110,11 +110,21 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     &-info {
       font-family: $regular-font;
       font-size: 15px;
       font-weight: 400;
       color: #acebff;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 5px;
+      }
     }
   }
 

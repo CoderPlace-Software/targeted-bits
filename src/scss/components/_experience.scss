@@ -1,7 +1,7 @@
 .experience {
   &__subtitle {
     text-align: center;
-    margin-top: 64px;
+    margin-top: -3px;
 
     &::after {
 
@@ -136,7 +136,8 @@
 @include media-breakpoint-down(sm) {
   .experience {
     &__item {
-      width: 300px;
+      width: 100%;
+      max-width: 340px;
     }
   }
 }

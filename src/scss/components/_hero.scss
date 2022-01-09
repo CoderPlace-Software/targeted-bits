@@ -11,6 +11,10 @@
     left: 0;
     top: 140px;
     z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 
   &__bg_right {
@@ -77,6 +81,10 @@
     background-position: right -1110px top -350px, right -1350px top -380px,
       left -740px top 100px, right 0 top 100px;
 
+    &__wrapper {
+      max-width: 70%;
+    }
+
     &__bg_right {
       position: absolute;
       right: -400px;
@@ -89,6 +97,12 @@
       right: -730px;
       top: 20px;
       z-index: -1;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__wrapper {
+      max-width: 90%;
     }
   }
 

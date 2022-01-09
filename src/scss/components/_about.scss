@@ -6,6 +6,11 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -1;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 
   .container {
@@ -143,6 +148,16 @@
   .about {
     &__image {
       height: auto;
+
+      &-title {
+        width: 180px;
+        bottom: -80px;
+        left: -60px;
+
+        img {
+          width: 95%;
+        }
+      }
     }
 
     &__main-img {
@@ -156,21 +171,31 @@
   .about {
     &__image {
       &-title {
-        width: 150px;
-        height: 180px;
+        width: 100px;
+        height: 100px;
         font-size: 10px;
         background-size: 120px 150px;
         background-repeat: no-repeat;
+        bottom: 0;
+        left: 0;
+
+        img {
+          height: 100px;
+          width: auto;
+        }
 
         div {
-          margin-left: 37px;
-          margin-right: 60px;
+          margin-left: 5px;
+          margin-right: 0;
+          line-height: 15px;
         }
 
         .number {
-          font-size: 30px;
-          line-height: 40px;
-          margin-top: 50px;
+          font-size: 15px;
+          line-height: 20px;
+          margin-top: 20px;
+          margin-right: 40px;
+          text-align: center;
         }
       }
     }

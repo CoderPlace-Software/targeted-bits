@@ -1,5 +1,5 @@
 .site-audit {
-  margin-top: -195px;
+  margin-top: -234px;
   position: relative;
   z-index: 1;
 
@@ -76,6 +76,10 @@
   }
 
   .button__submit {
+    font-family: $regular-font;
+    font-size: 16px;
+    font-weight: 700;
+
     &::after {
       color: #fff;
     }
