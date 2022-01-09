@@ -8,6 +8,7 @@
     position: relative;
     min-height: 320px;
     background-image: url("../images/site-audit-bg.png");
+    background-size: 100% 112%;
     border-radius: 15px;
     box-shadow: 19px 14px 87px rgb(254 76 28 / 42%);
 
@@ -36,7 +37,7 @@
   }
 
   &__subtitle {
-    max-width: 390px;
+    max-width: 300px;
     margin: 10px auto 0;
     text-align: center;
     text-transform: none;
