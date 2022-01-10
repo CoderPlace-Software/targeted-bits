@@ -27,5 +27,24 @@ const initHeader = () => {
   window.addEventListener("scroll", handleHeaderClass, false);
 };
 
+const initBackToTop = () => {
+  const backToTopEl = document.getElementById("back-to-top");
+  const backToTopClass = "visible";
+
+  const handleBackToTopClass = () => {
+    const currentScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 1400) {
+      backToTopEl.classList.add(backToTopClass);
+    } else {
+      backToTopEl.classList.remove(backToTopClass);
+    }
+  };
+
+  window.addEventListener("scroll", handleBackToTopClass, false);
+};
+
 initMobileMenu();
 initHeader();
+initBackToTop();
