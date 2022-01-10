@@ -79,10 +79,25 @@
     }
 
     .right-arrow {
-      &:hover {
+      &:active {
         > a {
           &::after {
+
+            @include transition;
+
             transform: rotate(0deg);
+          }
+        }
+
+        .mobile-submenu__item {
+
+          @include transition;
+
+          display: block;
+
+          &:first-child {
+            padding-top: 10px;
+            border-top: 1px solid #e3e3e3;
           }
         }
       }
