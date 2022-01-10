@@ -69,5 +69,37 @@
         color: $main-color;
       }
     }
+
+    .mobile-submenu__item {
+      display: none;
+    }
+
+    .submenu__item {
+      padding-left: 15px;
+    }
+
+    .right-arrow {
+      &:hover {
+        > a {
+          &::after {
+            transform: rotate(0deg);
+          }
+        }
+      }
+
+      > a {
+        position: relative;
+        display: block;
+
+        &::after {
+          content: url("../icons/down-arrow.svg");
+          transform: rotate(-90deg);
+          opacity: 0.5;
+          position: absolute;
+          top: -2px;
+          right: 10px;
+        }
+      }
+    }
   }
 }
