@@ -15,18 +15,11 @@ const initMobileSubmenu = () => {
     const target = e.target;
     const test = target.nextElementSibling;
     const test1 = target.closest(".right-arrow");
-   // const mobileSubmenuOpenEl = test.querySelectorAll(".mobile-submenu__item");
+    // const mobileSubmenuOpenEl = test.querySelectorAll(".mobile-submenu__item");
     if (test.classList.contains("active")) {
       test.classList.remove("active");
       test1.classList.remove("down-arrow");
     } else {
-      console.log(
-        document
-          .getElementById("mobile-menu")
-          .getElementsByClassName("down-arrow")[0]
-          .classList.remove("down-arrow")
-      );
-
       test.classList.add("active");
       test1.classList.add("down-arrow");
     }
