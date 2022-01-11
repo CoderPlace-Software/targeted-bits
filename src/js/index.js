@@ -9,6 +9,33 @@ const initMobileMenu = () => {
   mobileMenuCloseEl.addEventListener("click", toggleMenu);
 };
 
+const initMobileSubmenu = () => {
+  const mobileSubmenuClickEl = document.querySelectorAll(".right-arrow > a");
+  const toggleSubmenu = (e) => {
+    const target = e.target;
+    const test = target.nextElementSibling;
+    const test1 = target.closest(".right-arrow");
+   // const mobileSubmenuOpenEl = test.querySelectorAll(".mobile-submenu__item");
+    if (test.classList.contains("active")) {
+      test.classList.remove("active");
+      test1.classList.remove("down-arrow");
+    } else {
+      console.log(
+        document
+          .getElementById("mobile-menu")
+          .getElementsByClassName("down-arrow")[0]
+          .classList.remove("down-arrow")
+      );
+
+      test.classList.add("active");
+      test1.classList.add("down-arrow");
+    }
+  };
+  for (let i = 0; i < mobileSubmenuClickEl.length; i++) {
+    mobileSubmenuClickEl[i].addEventListener("click", (e) => toggleSubmenu(e));
+  }
+};
+
 const initHeader = () => {
   const headerEl = document.getElementById("header");
   const headerSmallClass = "header__small";
@@ -46,5 +73,6 @@ const initBackToTop = () => {
 };
 
 initMobileMenu();
+initMobileSubmenu();
 initHeader();
 initBackToTop();
