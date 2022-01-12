@@ -18,28 +18,28 @@
   }
 
   &-experience::before {
-    background-image: url("../images/waves/wave1.svg");
+    background-image: url("../images/waves/wave-1.svg");
     position: relative;
     left: -19px;
     width: calc(100% + 208px);
   }
 
   &-experience::after {
-    background-image: url("../images/waves/wave2.svg");
+    background-image: url("../images/waves/wave-2.svg");
     height: 152px;
     margin-left: -712px;
     width: calc(100% + 712px);
   }
 
   &-portfolio::before {
-    background-image: url("../images/waves/wave2.svg");
+    background-image: url("../images/waves/wave-2.svg");
     height: 149px;
     margin-left: -712px;
     width: calc(100% + 712px);
   }
 
   &-portfolio::after {
-    background-image: url("../images/waves/wave1.svg");
+    background-image: url("../images/waves/wave-1.svg");
     position: relative;
     left: -19px;
     width: calc(100% + 208px);
