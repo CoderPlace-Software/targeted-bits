@@ -19,6 +19,7 @@
     position: absolute;
     left: 184px;
     top: 0;
+    width: 63%;
   }
 
   .container {
@@ -99,18 +100,21 @@
 
 // Start media styles
 
-@include media-breakpoint-down(xxl) {
-  .about {
-    &__image {
-      margin-left: 100px;
-    }
-  }
-}
-
 @include media-breakpoint-down(xl) {
   .about {
     &__image {
       height: 455px;
+
+      &-title {
+        width: 200px;
+        height: 200px;
+        left: -14px;
+        bottom: -33px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
     &__main-img {
@@ -139,6 +143,11 @@
 
     &__image {
       height: 629px;
+
+      &-title {
+        left: 10px;
+        bottom: 28px;
+      }
     }
 
     &__main-img {
@@ -156,11 +165,13 @@
   .about {
     &__image {
       height: auto;
+      margin-left: 70px;
 
       &-title {
+        height: 200px;
         width: 180px;
-        bottom: -80px;
-        left: -60px;
+        bottom: -50px;
+        left: -10px;
 
         img {
           width: 95%;
@@ -169,7 +180,7 @@
     }
 
     &__main-img {
-      width: 80%;
+      width: 100%;
       height: auto;
     }
   }
@@ -178,6 +189,34 @@
 @include media-breakpoint-down(sm) {
   .about {
     &__image {
+      height: auto;
+      margin-left: 50px;
+
+      &-title {
+        height: 32%;
+        width: 43%;
+        bottom: 6%;
+        left: -10px;
+
+        img {
+          width: 95%;
+        }
+      }
+    }
+
+    &__main-img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 489px) {
+  .about {
+    &__image {
+      width: 280px;
+      margin-left: 0;
+
       &-title {
         width: 100px;
         height: 100px;
@@ -208,8 +247,13 @@
       }
     }
 
+    &__main-img {
+      width: 100%;
+    }
+
     &__small-image {
       width: 19%;
+      left: -20px;
     }
   }
 }
