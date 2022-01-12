@@ -27,14 +27,17 @@
   &-experience::after {
     background-image: url("../images/waves/wave-2.svg");
     height: 152px;
-    margin-left: -712px;
+    margin-top: 2px;
+    margin-left: -700px;
+    transform: rotate(180deg);
     width: calc(100% + 712px);
   }
 
   &-portfolio::before {
     background-image: url("../images/waves/wave-2.svg");
     height: 149px;
-    margin-left: -712px;
+    transform: rotateY(180deg);
+    margin-left: -700px;
     width: calc(100% + 712px);
   }
 
